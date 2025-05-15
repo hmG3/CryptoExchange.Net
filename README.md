@@ -5,34 +5,34 @@
 CryptoExchange.Net is a base library which is used to implement different cryptocurrency (exchange) API's. It provides a standardized way of implementing different API's, which results in a very similar experience for users of the API implementations. 
 Note that the CryptoExchange.Net package itself can not be used directly for accessing API's. Either install a client library from the list below or use [CryptoClients.Net](https://github.com/jkorf/CryptoClients.Net) which includes access to all exchange API's.
 
-For more information on what CryptoExchange.Net and it's client libraries offers see the [Documentation](https://jkorf.github.io/CryptoExchange.Net/).
+For more information on what CryptoExchange.Net and it's client libraries offers see the [Documentation](https://cryptoexchange.jkorf.dev/).
 
-### Current implementations
-The following API's are directly supported. Note that there are 3rd party implementations going around, but only these are created and supported by me:
+### CryptoExchange.Net Ecosystem
+Full list of all libraries part of the CryptoExchange.Net ecosystem. Consider using a referral link to support development, as well as potentially get some trading fee discount!
 
-|Exchange|Repository|Nuget|
-|--|--|--|
-|Binance|[JKorf/Binance.Net](https://github.com/JKorf/Binance.Net)|[![Nuget version](https://img.shields.io/nuget/v/Binance.net.svg?style=flat-square)](https://www.nuget.org/packages/Binance.Net)|
-|BingX|[JKorf/BingX.Net](https://github.com/JKorf/BingX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.BingX.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.BingX.Net)|
-|Bitfinex|[JKorf/Bitfinex.Net](https://github.com/JKorf/Bitfinex.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bitfinex.net.svg?style=flat-square)](https://www.nuget.org/packages/Bitfinex.Net)|
-|Bitget|[JKorf/Bitget.Net](https://github.com/JKorf/Bitget.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Bitget.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Bitget.Net)|
-|BitMart|[JKorf/BitMart.Net](https://github.com/JKorf/BitMart.Net)|[![Nuget version](https://img.shields.io/nuget/v/BitMart.net.svg?style=flat-square)](https://www.nuget.org/packages/BitMart.Net)|
-|BitMEX|[JKorf/BitMEX.Net](https://github.com/JKorf/BitMEX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.BitMEX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.BitMEX.Net)|
-|Bybit|[JKorf/Bybit.Net](https://github.com/JKorf/Bybit.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bybit.net.svg?style=flat-square)](https://www.nuget.org/packages/Bybit.Net)|
-|Coinbase|[JKorf/Coinbase.Net](https://github.com/JKorf/Coinbase.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.Coinbase.Net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.Coinbase.Net)|
-|CoinEx|[JKorf/CoinEx.Net](https://github.com/JKorf/CoinEx.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinEx.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinEx.Net)|
-|CoinGecko|[JKorf/CoinGecko.Net](https://github.com/JKorf/CoinGecko.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinGecko.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinGecko.Net)|
-|Crypto.com|[JKorf/CryptoCom.Net](https://github.com/JKorf/CryptoCom.Net)|[![Nuget version](https://img.shields.io/nuget/v/CryptoCom.net.svg?style=flat-square)](https://www.nuget.org/packages/CryptoCom.Net)|
-|DeepCoin|[JKorf/DeepCoin.Net](https://github.com/JKorf/DeepCoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/DeepCoin.net.svg?style=flat-square)](https://www.nuget.org/packages/DeepCoin.Net)|
-|Gate.io|[JKorf/GateIo.Net](https://github.com/JKorf/GateIo.Net)|[![Nuget version](https://img.shields.io/nuget/v/GateIo.net.svg?style=flat-square)](https://www.nuget.org/packages/GateIo.Net)|
-|HTX|[JKorf/HTX.Net](https://github.com/JKorf/HTX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.HTX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.HTX.Net)|
-|HyperLiquid|[JKorf/HyperLiquid.Net](https://github.com/JKorf/HyperLiquid.Net)|[![Nuget version](https://img.shields.io/nuget/v/HyperLiquid.Net.svg?style=flat-square)](https://www.nuget.org/packages/HyperLiquid.Net)|
-|Kraken|[JKorf/Kraken.Net](https://github.com/JKorf/Kraken.Net)|[![Nuget version](https://img.shields.io/nuget/v/KrakenExchange.net.svg?style=flat-square)](https://www.nuget.org/packages/KrakenExchange.Net)|
-|Kucoin|[JKorf/Kucoin.Net](https://github.com/JKorf/Kucoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/Kucoin.net.svg?style=flat-square)](https://www.nuget.org/packages/Kucoin.Net)|
-|Mexc|[JKorf/Mexc.Net](https://github.com/JKorf/Mexc.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Mexc.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Mexc.Net)|
-|OKX|[JKorf/OKX.Net](https://github.com/JKorf/OKX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.OKX.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.OKX.Net)|
-|WhiteBit|[JKorf/WhiteBit.Net](https://github.com/JKorf/WhiteBit.Net)|[![Nuget version](https://img.shields.io/nuget/v/WhiteBit.net.svg?style=flat-square)](https://www.nuget.org/packages/WhiteBit.Net)|
-|XT|[JKorf/XT.Net](https://github.com/JKorf/XT.Net)|[![Nuget version](https://img.shields.io/nuget/v/XT.net.svg?style=flat-square)](https://www.nuget.org/packages/XT.Net)|
+||Exchange|Type|Repository|Nuget|Referral Link|Referral Fee Discount|
+|--|--|--|--|--|--|--|
+|![Binance](https://raw.githubusercontent.com/JKorf/Binance.Net/refs/heads/master/Binance.Net/Icon/icon.png)|Binance|CEX|[JKorf/Binance.Net](https://github.com/JKorf/Binance.Net)|[![Nuget version](https://img.shields.io/nuget/v/Binance.net.svg?style=flat-square)](https://www.nuget.org/packages/Binance.Net)|[Link](https://accounts.binance.com/register?ref=X5K3F2ZG)|20%|
+|![BingX](https://raw.githubusercontent.com/JKorf/BingX.Net/refs/heads/main/BingX.Net/Icon/BingX.png)|BingX|CEX|[JKorf/BingX.Net](https://github.com/JKorf/BingX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.BingX.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.BingX.Net)|[Link](https://bingx.com/invite/FFHRJKWG/)|20%|
+|![Bitfinex](https://raw.githubusercontent.com/JKorf/Bitfinex.Net/refs/heads/master/Bitfinex.Net/Icon/icon.png)|Bitfinex|CEX|[JKorf/Bitfinex.Net](https://github.com/JKorf/Bitfinex.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bitfinex.net.svg?style=flat-square)](https://www.nuget.org/packages/Bitfinex.Net)|-|-|
+|![Bitget](https://raw.githubusercontent.com/JKorf/Bitget.Net/refs/heads/main/Bitget.Net/Icon/icon.png)|Bitget|CEX|[JKorf/Bitget.Net](https://github.com/JKorf/Bitget.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Bitget.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Bitget.Net)|[Link](https://partner.bitget.com/bg/1qlf6pj1)|20%|
+|![BitMart](https://raw.githubusercontent.com/JKorf/BitMart.Net/refs/heads/main/BitMart.Net/Icon/icon.png)|BitMart|CEX|[JKorf/BitMart.Net](https://github.com/JKorf/BitMart.Net)|[![Nuget version](https://img.shields.io/nuget/v/BitMart.net.svg?style=flat-square)](https://www.nuget.org/packages/BitMart.Net)|[Link](https://www.bitmart.com/invite/JKorfAPI/en-US)|30%|
+|![BitMEX](https://raw.githubusercontent.com/JKorf/BitMEX.Net/refs/heads/main/BitMEX.Net/Icon/icon.png)|BitMEX|CEX|[JKorf/BitMEX.Net](https://github.com/JKorf/BitMEX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.BitMEX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.BitMEX.Net)|[Link](https://www.bitmex.com/app/register/94f98e)|30%|
+|![Bybit](https://raw.githubusercontent.com/JKorf/Bybit.Net/refs/heads/main/ByBit.Net/Icon/icon.png)|Bybit|CEX|[JKorf/Bybit.Net](https://github.com/JKorf/Bybit.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bybit.net.svg?style=flat-square)](https://www.nuget.org/packages/Bybit.Net)|[Link](https://partner.bybit.com/b/jkorf)|-|
+|![Coinbase](https://raw.githubusercontent.com/JKorf/Coinbase.Net/refs/heads/main/Coinbase.Net/Icon/icon.png)|Coinbase|CEX|[JKorf/Coinbase.Net](https://github.com/JKorf/Coinbase.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.Coinbase.Net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.Coinbase.Net)|[Link](https://advanced.coinbase.com/join/T6H54H8)|-|
+|![CoinEx](https://raw.githubusercontent.com/JKorf/CoinEx.Net/refs/heads/master/CoinEx.Net/Icon/icon.png)|CoinEx|CEX|[JKorf/CoinEx.Net](https://github.com/JKorf/CoinEx.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinEx.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinEx.Net)|[Link](https://www.coinex.com/register?rc=rbtnp)|20%|
+|![CoinGecko](https://raw.githubusercontent.com/JKorf/CoinGecko.Net/refs/heads/main/CoinGecko.Net/Icon/icon.png)|CoinGecko|-|[JKorf/CoinGecko.Net](https://github.com/JKorf/CoinGecko.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinGecko.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinGecko.Net)|-|-|
+|![Crypto.com](https://raw.githubusercontent.com/JKorf/CryptoCom.Net/refs/heads/main/CryptoCom.Net/Icon/icon.png)|Crypto.com|CEX|[JKorf/CryptoCom.Net](https://github.com/JKorf/CryptoCom.Net)|[![Nuget version](https://img.shields.io/nuget/v/CryptoCom.net.svg?style=flat-square)](https://www.nuget.org/packages/CryptoCom.Net)|[Link](https://crypto.com/exch/26ge92xbkn)|-|
+|![DeepCoin](https://raw.githubusercontent.com/JKorf/DeepCoin.Net/refs/heads/main/DeepCoin.Net/Icon/icon.png)|DeepCoin|CEX|[JKorf/DeepCoin.Net](https://github.com/JKorf/DeepCoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/DeepCoin.net.svg?style=flat-square)](https://www.nuget.org/packages/DeepCoin.Net)|[Link](https://s.deepcoin.com/jddhfca)|-|
+|![Gate.io](https://raw.githubusercontent.com/JKorf/GateIo.Net/refs/heads/main/GateIo.Net/Icon/icon.png)|Gate.io|CEX|[JKorf/GateIo.Net](https://github.com/JKorf/GateIo.Net)|[![Nuget version](https://img.shields.io/nuget/v/GateIo.net.svg?style=flat-square)](https://www.nuget.org/packages/GateIo.Net)|[Link](https://www.gate.io/share/JKorf)|20%|
+|![HTX](https://raw.githubusercontent.com/JKorf/HTX.Net/refs/heads/master/HTX.Net/Icon/icon.png)|HTX|CEX|[JKorf/HTX.Net](https://github.com/JKorf/HTX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.HTX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.HTX.Net)|[Link](https://www.htx.com/invite/en-us/1f?invite_code=ekek5223)|30%|
+|![HyperLiquid](https://raw.githubusercontent.com/JKorf/HyperLiquid.Net/refs/heads/main/HyperLiquid.Net/Icon/icon.png)|HyperLiquid|DEX|[JKorf/HyperLiquid.Net](https://github.com/JKorf/HyperLiquid.Net)|[![Nuget version](https://img.shields.io/nuget/v/HyperLiquid.Net.svg?style=flat-square)](https://www.nuget.org/packages/HyperLiquid.Net)|[Link](https://app.hyperliquid.xyz/join/JKORF)|4%|
+|![Kraken](https://raw.githubusercontent.com/JKorf/Kraken.Net/refs/heads/master/Kraken.Net/Icon/icon.png)|Kraken|CEX|[JKorf/Kraken.Net](https://github.com/JKorf/Kraken.Net)|[![Nuget version](https://img.shields.io/nuget/v/KrakenExchange.net.svg?style=flat-square)](https://www.nuget.org/packages/KrakenExchange.Net)|-|-|
+|![Kucoin](https://raw.githubusercontent.com/JKorf/Kucoin.Net/refs/heads/master/Kucoin.Net/Icon/icon.png)|Kucoin|CEX|[JKorf/Kucoin.Net](https://github.com/JKorf/Kucoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/Kucoin.net.svg?style=flat-square)](https://www.nuget.org/packages/Kucoin.Net)|[Link](https://www.kucoin.com/r/rf/QBS4FPED)|-|
+|![Mexc](https://raw.githubusercontent.com/JKorf/Mexc.Net/refs/heads/main/Mexc.Net/Icon/icon.png)|Mexc|CEX|[JKorf/Mexc.Net](https://github.com/JKorf/Mexc.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Mexc.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Mexc.Net)|-|-|
+|![OKX](https://raw.githubusercontent.com/JKorf/OKX.Net/refs/heads/main/OKX.Net/Icon/icon.png)|OKX|CEX|[JKorf/OKX.Net](https://github.com/JKorf/OKX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.OKX.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.OKX.Net)|[Link](https://www.okx.com/join/14592495)|20%|
+|![WhiteBit](https://raw.githubusercontent.com/JKorf/WhiteBit.Net/refs/heads/main/WhiteBit.Net/Icon/icon.png)|WhiteBit|CEX|[JKorf/WhiteBit.Net](https://github.com/JKorf/WhiteBit.Net)|[![Nuget version](https://img.shields.io/nuget/v/WhiteBit.net.svg?style=flat-square)](https://www.nuget.org/packages/WhiteBit.Net)|[Link](https://whitebit.com/referral/a8e59b59-186c-4662-824c-3095248e0edf)|-|
+|![XT](https://raw.githubusercontent.com/JKorf/XT.Net/refs/heads/main/XT.Net/Icon/icon.png)|XT|CEX|[JKorf/XT.Net](https://github.com/JKorf/XT.Net)|[![Nuget version](https://img.shields.io/nuget/v/XT.net.svg?style=flat-square)](https://www.nuget.org/packages/XT.Net)|[Link](https://www.xt.com/ru/accounts/register?ref=CZG39C)|25%|
 
 Any of these can be installed independently or install [CryptoClients.Net](https://github.com/jkorf/CryptoClients.Net) which includes all exchange API's.
 
@@ -43,22 +43,8 @@ A Discord server is available [here](https://discord.gg/MSpeEtSY8t). Feel free t
 ## Support the project
 Any support is greatly appreciated.
 
-## Referral
-When creating an account on new exchanges please consider using a referral link from below to support development
-
-|Exchange|Link|
-|--|--|
-|Bybit|[https://partner.bybit.com/b/jkorf](https://partner.bybit.com/b/jkorf)|
-|Coinbase|[https://advanced.coinbase.com/join/T6H54H8](https://advanced.coinbase.com/join/T6H54H8)|
-|CoinEx|[https://www.coinex.com/register?refer_code=hd6gn](https://www.coinex.com/register?refer_code=hd6gn)|
-|Crypto.com|[https://crypto.com/exch/26ge92xbkn](https://crypto.com/exch/26ge92xbkn)|
-|DeepCoin|[https://s.deepcoin.com/jddhfca)|
-|HTX|[https://www.htx.com/invite/en-us/1f?invite_code=fxp9](https://www.htx.com/invite/en-us/1f?invite_code=fxp9)|
-|HyperLiquid|[https://app.hyperliquid.xyz/join/JKORF](https://app.hyperliquid.xyz/join/JKORF)|
-|Kucoin|[https://www.kucoin.com/r/rf/QBS4FPED](https://www.kucoin.com/r/rf/QBS4FPED)|
-|OKX|[https://okx.com/join/48046699](https://okx.com/join/48046699)|
-|WhiteBit|[https://whitebit.com/referral/a8e59b59-186c-4662-824c-3095248e0edf](https://whitebit.com/referral/a8e59b59-186c-4662-824c-3095248e0edf)|
-|XT|[https://www.xt.com/en/accounts/register?ref=1HRM5J](https://www.xt.com/en/accounts/register?ref=1HRM5J)|
+### Referral
+When creating an account on new exchanges please consider using a referral link from above.
 
 ### Donate
 Make a one time donation in a crypto currency of your choice. If you prefer to donate a currency not listed here please contact me.
@@ -71,6 +57,60 @@ Make a one time donation in a crypto currency of your choice. If you prefer to d
 Alternatively, sponsor me on Github using [Github Sponsors](https://github.com/sponsors/JKorf). 
 
 ## Release notes
+* Version 9.0.0 - 13 May 2025
+    * Added support for Native AOT compilation
+    * Updated all IEnumerable response types to array response types
+    * Added Pass support for ApiCredentials, removing the need for most implementations to add their own ApiCredentials type
+    * Added KeepAliveTimeout setting setting ping frame timeouts for SocketApiClient
+    * Added IBookTickerRestClient Shared interface for requesting book tickers
+    * Added ISpotTriggerOrderRestClient Shared interface for managing spot trigger orders
+    * Added ISpotOrderClientIdClient Shared interface for managing spot orders by client order id
+    * Added IFuturesTriggerOrderRestClient Shared interface for managing futures trigger orders
+    * Added IFuturesOrderClientIdClient Shared interface for managing futures orders by client order id
+    * Added IFuturesTpSlRestClient Shared interface for setting TP/SL on open futures positions
+    * Added GenerateClientOrderId to ISpotOrderRestClient and IFuturesOrderRestClient interface
+    * Added OptionalExchangeParameters and Supported properties to EndpointOptions
+    * Refactor Shared interfaces quantity parameters and properties to use SharedQuantity
+    * Added SharedSymbol property to Shared interface models returning a symbol
+    * Added TriggerPrice, IsTriggerOrder, TakeProfitPrice, StopLossPrice and IsCloseOrder to SharedFuturesOrder response model
+    * Added MaxShortLeverage and MaxLongLeverage to SharedFuturesSymbol response model
+    * Added StopLossPrice and TakeProfitPrice to SharedPosition response model
+    * Added TriggerPrice and IsTriggerOrder to SharedSpotOrder response model
+    * Added QuoteVolume property to SharedSpotTicker response model
+    * Added AssetAlias configuration models
+    * Added static ExchangeSymbolCache for tracking symbol information from exchanges
+    * Added static CallResult.SuccessResult to be used instead of constructing success CallResult instance
+    * Added static ApplyRules, RandomHexString and RandomLong helper methods to ExchangeHelpers class
+    * Added AsErrorWithData To CallResult
+    * Added OriginalData property to CallResult
+    * Added support for adjusting the rate limit key per call, allowing for ratelimiting depending on request parameters
+    * Added implementation for integration testing ISymbolOrderBook instances
+    * Added implementation for integration testing socket subscriptions
+    * Added implementation for testing socket queries
+    * Updated request cancellation logging to Debug level
+    * Updated logging SourceContext to include the client type
+    * Updated some logging logic, errors no longer contain any data, exception are not logged as string but instead forwarded to structured logging
+    * Fixed warning for Enum parsing throwing exception and output warnings for each object in a response to only once to prevent slowing down execution
+    * Fixed memory leak in AsyncAutoRestEvent
+    * Fixed logging for ping frame timeout
+    * Fixed warning getting logged when user stops SymbolOrderBook instance
+    * Fixed socket client `UnsubscribeAll` not unsubscribing dedicated connections
+    * Fixed memory leak in Rest client cache
+    * Fixed integers bigger than int16 not getting correctly parsed to enums
+    * Fixed issue where the default options were overridden when using SetApiCredentials
+    * Removed Newtonsoft.Json dependency
+    * Removed legacy Rest client code
+    * Removed legacy ISpotClient and IFuturesClient support
+
+* Version 9.0.0-beta7 - 06 May 2025
+    * Added AssetAlias configuration classes
+    * Added Exception property on Error objects
+    * Updated logging to no longer log full stacktraces but instead pass exceptions to struct
+    * Removed the Data property from Error objects (is already available on CallResult)ured logging
+    * Updated ArrayConverter _typeAttributesCache from ConcurrentDictionary to lazy list since each type has it's own ArrayConverter instance now
+    * Updated SocketApiClient to create RateLimiter instance if none is provided
+    * Fixed issue with ArrayConverter creating seperate JsonSerializerContext instance for each type by adding JsonSerializerContextCache
+
 * Version 9.0.0-beta6 - 03 May 2025
     * Fixed initial asset info in ExchangeSymbolCache not getting cached in uppercase
     * Fixed ArrayConverter creating new JsonSerializerContext for each default json deserialization

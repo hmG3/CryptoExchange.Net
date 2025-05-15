@@ -3,6 +3,7 @@ using CryptoExchange.Net.Logging.Extensions;
 using CryptoExchange.Net.Objects;
 using CryptoExchange.Net.Objects.Options;
 using CryptoExchange.Net.Objects.Sockets;
+using CryptoExchange.Net.RateLimiting;
 using CryptoExchange.Net.RateLimiting.Interfaces;
 using CryptoExchange.Net.Sockets;
 using Microsoft.Extensions.Logging;
@@ -210,9 +211,9 @@ namespace CryptoExchange.Net.Clients
             {
                 await semaphoreSlim.WaitAsync(ct).ConfigureAwait(false);
             }
-            catch (OperationCanceledException)
+            catch (OperationCanceledException tce)
             {
-                return new CallResult<UpdateSubscription>(new CancellationRequestedError());
+                return new CallResult<UpdateSubscription>(new CancellationRequestedError(tce));
             }
 
             try
@@ -565,11 +566,12 @@ namespace CryptoExchange.Net.Clients
         /// </summary>
         protected async virtual Task HandleConnectRateLimitedAsync()
         {
-            if (ClientOptions.RateLimiterEnabled && RateLimiter is not null && ClientOptions.ConnectDelayAfterRateLimited is not null)
+            if (ClientOptions.RateLimiterEnabled && ClientOptions.ConnectDelayAfterRateLimited.HasValue)
             {
                 var retryAfter = DateTime.UtcNow.Add(ClientOptions.ConnectDelayAfterRateLimited.Value);
                 _logger.AddingRetryAfterGuard(retryAfter);
-                await RateLimiter.SetRetryAfterGuardAsync(retryAfter, RateLimiting.RateLimitItemType.Connection).ConfigureAwait(false);
+                RateLimiter ??= new RateLimitGate("Connection");
+                await RateLimiter.SetRetryAfterGuardAsync(retryAfter, RateLimitItemType.Connection).ConfigureAwait(false);
             }
         }
 
